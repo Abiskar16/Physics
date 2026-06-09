@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio | Aabiskar Subedi</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 50px;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .left h1 {
+      color: #2c7da0;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .profile-img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    .bio {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .links a {
+      display: block;
+      color: #2c7da0;
+      text-decoration: none;
+      margin-top: 18px;
+      font-size: 15px;
+    }
+
+    .right h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .project {
+      margin-bottom: 45px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 35px;
+    }
+
+    .project h3 {
+      color: #2c7da0;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 650px;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: #777;
+      margin-top: 25px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .left {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="left">
+      <h1>Aabiskar Subedi</h1>
+
+      <img src="profile.jpg" alt="Aabiskar Subedi" class="profile-img">
+
+      <div class="bio">
+        <p>
+          I am a graduate student in Physics at the University of North Dakota.
+          My research focuses on molecular beam epitaxy, thin film growth,
+         nanostructures, and surface characterization.
+        </p>
+
+        <p>
+          I work with MBE, RHEED, XPS, AFM, XRD, SEM, and thin film growth
+          on silicon substrates.
+        </p>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/Abiskar16">View My GitHub Profile</a>
+        <a href="#">View My LinkedIn Profile</a>
+        <a href="cv.pdf">Download My CV</a>
+      </div>
+
+      <div class="footer">
+        Hosted on GitHub Pages
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Portfolio</h2>
+
+      <div class="section-title">Research Projects</div>
+
+      <div class="project">
+        <h3>Metal Nitride Nanowire Growth on Si(110)</h3>
+        <p>
+          This project focuses on the growth of nanostructures using molecular
+          beam epitaxy and characterization using RHEED, SEM, AFM, XRD, and XPS.
+        </p>
+        <img src="project1.jpg" alt="nanowire project">
+      </div>
+
+      <div class="project">
+        <h3>XPS Analysis of Si-N and Si-O Chemical States</h3>
+        <p>
+          XPS fitting is used to study bonding states, oxidation, and nitrogen
+          incorporation in thin film samples.
+        </p>
+        <img src="project2.jpg" alt="XPS project">
+      </div>
+
+      <div class="project">
+        <h3>RHEED Study of Silicon Surface Reconstruction</h3>
+        <p>
+          RHEED is used to monitor surface structure, reconstruction, and growth
+          behavior during high-temperature annealing and thin film deposition.
+        </p>
+        <img src="project3.jpg" alt="RHEED project">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
