@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Portfolio | Aabiskar Subedi</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
 
     .container {
       width: 85%;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 50px auto;
       display: grid;
       grid-template-columns: 280px 1fr;
@@ -51,42 +51,68 @@
       font-size: 15px;
     }
 
-    .right h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 15px;
-    }
-
-    .section-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 18px;
-    }
-
-    .project {
-      margin-bottom: 45px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 35px;
-    }
-
-    .project h3 {
-      color: #2c7da0;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .project img {
-      width: 100%;
-      max-width: 650px;
-      border: 1px solid #ddd;
-      margin-top: 10px;
+    .links a:hover {
+      text-decoration: underline;
     }
 
     .footer {
       font-size: 13px;
       color: #777;
       margin-top: 25px;
+    }
+
+    .right h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .project-card h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .project-card a {
+      color: #2c7da0;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      margin-top: 10px;
     }
 
     @media screen and (max-width: 800px) {
@@ -101,6 +127,10 @@
       .profile-img {
         margin-left: auto;
         margin-right: auto;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -119,7 +149,7 @@
         <p>
           I am a graduate student in Physics at the University of North Dakota.
           My research focuses on molecular beam epitaxy, thin film growth,
-          Transition Metal nitride nanostructures, and surface characterization.
+          transition metal nitride nanostructures, and surface characterization.
         </p>
 
         <p>
@@ -144,39 +174,53 @@
 
       <div class="section-title">Research Projects</div>
 
-      <div class="project">
-        <h3>
-  <a href="nanowire.html">Metal Nitride Nanowire Growth on Si(110)</a>
-</h3>
-        <p>
-          Growth nanostructures using molecular beam epitaxy.
-          Characterization includes RHEED, SEM, AFM, XRD, and XPS.
-        </p>
-        <img src="project1.webp" alt="Nanowire project">
-      </div>
+      <div class="project-grid">
 
-      <div class="project">
-        <h3>
-  <a href="xps.html">XPS Analysis</a>
-</h3>
-        <p>
-          XPS fitting is used to study bonding states, oxidation
-          incorporation in thin film samples.
-        </p>
-        <img src="project2.png" alt="XPS project">
-      </div>
+        <div class="project-card">
+          <h3>
+            <a href="nanowire.html">Metal Nitride Nanowire Growth on Si(110)</a>
+          </h3>
+          <p>
+            Growth of nanostructures using molecular beam epitaxy.
+            Characterization includes RHEED, SEM, AFM, XRD, and XPS.
+          </p>
+          <img src="project1.webp" alt="Nanowire project">
+        </div>
 
-      <div class="project">
-        <h3>
-  <a href="rheed.html">RHEED Study of Silicon Surface Reconstruction</a>
-</h3>
-        <p>
-          RHEED is used to monitor surface reconstruction and growth behavior
-          during high-temperature annealing and thin film deposition.
-        </p>
-        <img src="project3.png" alt="RHEED project">
-      </div>
+        <div class="project-card">
+          <h3>
+            <a href="xps.html">XPS Analysis</a>
+          </h3>
+          <p>
+            XPS fitting is used to study bonding states, oxidation, and chemical
+            composition in thin film samples.
+          </p>
+          <img src="project2.png" alt="XPS project">
+        </div>
 
+        <div class="project-card">
+          <h3>
+            <a href="rheed.html">RHEED Study of Silicon Surface Reconstruction</a>
+          </h3>
+          <p>
+            RHEED is used to monitor surface reconstruction and growth behavior
+            during high-temperature annealing and deposition.
+          </p>
+          <img src="project3.png" alt="RHEED project">
+        </div>
+
+        <div class="project-card">
+          <h3>
+            <a href="mbe.html">MBE Thin Film Growth</a>
+          </h3>
+          <p>
+            Molecular beam epitaxy is used to grow thin films and nanostructures
+            under ultra-high vacuum conditions.
+          </p>
+          <img src="project1.webp" alt="MBE project">
+        </div>
+
+      </div>
     </div>
 
   </div>
